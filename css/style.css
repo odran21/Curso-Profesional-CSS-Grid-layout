@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c-0: #fff;
+  --c-l: #fabc3f;
+  --c-2: #e85c0d;
+  --c-3: #c7253e;
+  --c-4: #821131;
+  --c-5: #000;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: var(--c-0);
+}
+
+.container div {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(180deg, var(--c-3), var(--c-4));
+  margin: 10px;
+}
+.container .item-1 {}
+.container .item-2 {}
+.container .item-3 {}
+.container .item-4 {}
+.container .item-5 {}
+.container .item-6 {}
