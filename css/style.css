@@ -28,7 +28,7 @@ main {
   margin-inline: auto;
   display: grid;
   place-items: center;
-  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(auto-fit, minmax(100px, 1fr)) / repeat(auto-fit, minmax(100px, 1fr));
   gap: 24px;
 }
 
@@ -91,7 +91,7 @@ main {
   height: 100vh;
   margin-inline: auto;
   display: grid;
-  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  grid-template: repeat(auto-fill, minmax(100px, 1fr)) / repeat(auto-fill, minmax(100px, 1fr));
 }
 .container-2 .item-1 {
   grid-column: 1/2;
