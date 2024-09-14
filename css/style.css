@@ -17,20 +17,122 @@ body {
   width: 100%;
   height: 100%;
 }
-
-.container {
-  background-color: var(--c-0);
+main {
+    background: linear-gradient(180deg, var(--c-3), var(--c-4));
 }
 
-.container div {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(180deg, var(--c-3), var(--c-4));
-  margin: 10px;
+.section-1 .container-1 {
+  width: 90%;
+  height: 100vh;
+  padding: 24px;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: 24px;
 }
-.container .item-1 {}
-.container .item-2 {}
-.container .item-3 {}
-.container .item-4 {}
-.container .item-5 {}
-.container .item-6 {}
+
+.container-1 div,.container-2 div {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+.container-1 .item-1 {
+  background-image: url("../assets/images/plato-tipico-cocina-brasilena-llamado-moqueca-peixe_261158-1504.avif");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.container-1 .item-2 {
+  background-image: url("../assets/images/primer-plano-carne-asada-salsa-verduras-patatas-fritas-plato-sobre-mesa_181624-35847.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.container-1 .item-3 {
+  background-image: url("../assets/images/plato-pasta-pecho-pollo-salsa-tomate_1165818-782.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.container-1 .item-4 {
+  background-image: url("../assets/images/plato-comida-saludable-brasilena-frijoles-pollo-parrilla-harina-arroz-ensalada-verduras_1026950-84716.avif");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+.container-1 .item-5 {
+  background-image: url("../assets/images/filete-pollo-limon-tomate-chile-zanahoria-plato-blanco_1150-25887.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.container-1 .item-6 {
+  background-image: url("../assets/images/composicion-deliciosa-comida-brasilena-alto-angulo_23-2148739223.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.section-2 .container-2 {
+  width: 90%;
+  height: 100vh;
+  margin-inline: auto;
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+}
+.container-2 .item-1 {
+  grid-column: 1/2;
+  grid-row: 4/9;
+  background: yellow;
+}
+.container-2 .item-2 {
+  grid-column: 1/5;
+  grid-row: 6/8;
+  background: blue;
+  opacity: .5;
+  z-index: 2;
+}
+.container-2 .item-3 {
+  grid-column: 4/7;
+  grid-row: 5/11;
+  background: red;
+  z-index: 1;
+}
+.container-2 .item-4 {
+  grid-column: 6/9;
+  grid-row: 4/7;
+  border: 4px solid green;
+  border-radius: 24px;
+}
+.container-2 .item-5 {
+  display: grid;
+  grid-column: 3/7;
+  grid-row: 2/7;
+  border: 4px solid greenyellow;
+  border-radius: 24px;
+
+}
+.container-2 .item-6 {
+  display: grid;
+  grid-column: 4/8;
+  grid-row: 2/4;
+}
+.container-2 .item-6 h1 {
+  place-self: center;
+  font-size: 4rem;
+  z-index: 2;
+  color: var(--c-0);
+}
